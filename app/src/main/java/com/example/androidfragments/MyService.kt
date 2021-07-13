@@ -3,6 +3,7 @@ package com.example.androidfragments
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
+import android.util.Log
 
 class MyService : Service() {
 
@@ -12,5 +13,10 @@ class MyService : Service() {
 
     override fun onDestroy() {
         super.onDestroy()
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        Log.d("MyService","tests")
     }
 }
