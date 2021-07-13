@@ -20,7 +20,7 @@ class MyService : Service() {
         Log.d("MyService","tests")
     }
 
-    override fun onRebind(intent: Intent?) {
-        super.onRebind(intent)
+    override fun onLowMemory() {
+        super.onLowMemory()
     }
 }
