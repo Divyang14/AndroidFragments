@@ -14,9 +14,12 @@ class MyService : Service() {
     override fun onDestroy() {
         super.onDestroy()
     }
-
     override fun onCreate() {
         super.onCreate()
         Log.d("MyService","tests")
+    }
+
+    override fun onLowMemory() {
+        super.onLowMemory()
     }
 }
