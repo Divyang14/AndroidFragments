@@ -19,4 +19,8 @@ class MyService : Service() {
         super.onCreate()
         Log.d("MyService","tests")
     }
+
+    override fun onRebind(intent: Intent?) {
+        super.onRebind(intent)
+    }
 }
